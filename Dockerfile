@@ -19,4 +19,6 @@ WORKDIR app
 COPY --from=builder /build/rango ./
 RUN mkdir -p /app/config
 
+EXPOSE 3000
+
 CMD ["./rango"]
